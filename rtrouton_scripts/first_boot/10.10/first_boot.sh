@@ -8,6 +8,7 @@
 # Rich Trouton, created August 15, 2013
 # Last modified 10-25-2013
 #
+# Eduted by JR for SVI / UoM
 
 # Sleeping for 30 seconds to allow the new default User Template folder to be moved into place
 
@@ -36,7 +37,7 @@ fi
 # To revert it back to /bin/sh, run the following command:
 # /usr/bin/dscl . -change /Users/root UserShell /usr/bin/false /bin/sh
 
-/usr/bin/dscl . -create /Users/root UserShell /usr/bin/false
+# /usr/bin/dscl . -create /Users/root UserShell /usr/bin/false
 
 # Make a symbolic link from /System/Library/CoreServices/Applications/Directory Utility.app 
 # to /Applications/Utilities so that Directory Utility.app is easier to access.
@@ -243,8 +244,8 @@ fi
 # By default, the values in this script are set to 
 # send no diagnostic data: 
 
-SUBMIT_DIAGNOSTIC_DATA_TO_APPLE=FALSE
-SUBMIT_DIAGNOSTIC_DATA_TO_APP_DEVELOPERS=FALSE
+SUBMIT_DIAGNOSTIC_DATA_TO_APPLE=TRUE
+SUBMIT_DIAGNOSTIC_DATA_TO_APP_DEVELOPERS=TRUE
 
 # To change this in your own script, comment out the FALSE
 # lines and uncomment the TRUE lines as appropriate.
