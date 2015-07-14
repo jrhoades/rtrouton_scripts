@@ -280,10 +280,4 @@ systemsetup -setremotelogin on
 
 spctl --master-disable 
 
-# Remove setup LaunchDaemon item
-
-srm /Library/LaunchDaemons/com.company.initialsetup.plist
-
-# Make script self-destruct
-
-srm $0
+exit 0
